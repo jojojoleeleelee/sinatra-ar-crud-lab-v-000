@@ -18,7 +18,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/posts' do
-    @posts 
+    @posts = Post.all
   end
 
   get '/posts/:id' do
