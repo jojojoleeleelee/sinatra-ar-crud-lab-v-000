@@ -1,1 +1,6 @@
-<%=%>
+<h1>HERE IS YOUR SPECIFIC BLOG ENTRY</h1>
+<% @post.map do |p| %>
+<p><%= p.name %></p>
+<p><%= p.content %></p>
+<% end %>
+
