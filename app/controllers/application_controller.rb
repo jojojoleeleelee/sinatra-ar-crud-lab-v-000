@@ -23,6 +23,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/posts/:id' do
+    binding.pry
     @post = params[:id]
     erb :show
   end
