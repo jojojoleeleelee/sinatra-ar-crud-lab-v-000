@@ -23,6 +23,6 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/posts/:id' do
-
+    params[:id]
   end
 end
