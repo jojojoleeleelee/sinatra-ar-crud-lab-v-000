@@ -13,12 +13,12 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/posts' do
-    @post = Post.new(params[:name], params[:content])
+    @post = Post.create(name: params[:name], content: params[:content])
     redirect '/posts'
   end
 
   get '/posts' do
-    @posts
+    @posts 
   end
 
   get '/posts/:id' do
