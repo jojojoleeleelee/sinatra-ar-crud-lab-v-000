@@ -13,7 +13,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/posts' do
-    @entry = Post.create(name: params[:name], content: params[:content])
+    Post.create(name: params[:name], content: params[:content])
     erb :index
   end
 
